@@ -19,12 +19,15 @@ public class Digits {
     }
     public void Recursion() {
         if (integers.get(i) % 2 != 0) {
-            System.out.println(integers.get(i));
-            i++;
-            Recursion();
+            if (integers.get(i) != 0) {
+                System.out.println(integers.get(i));
+                i++;
+                Recursion();
+            }
         }
         else {
-            return;
+            i++;
+            Recursion();
         }
     }
 }
