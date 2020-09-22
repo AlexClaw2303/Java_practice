@@ -16,17 +16,13 @@ public class Digits {
             num = sc.nextInt();
             integers.add(num);
         }
+        sc.close();
     }
     public void Recursion() {
         if (integers.get(i) % 2 != 0) {
-            if (integers.get(i) != 0) {
-                System.out.println(integers.get(i));
-                i++;
-                Recursion();
-            }
+            System.out.println(integers.get(i));
         }
-        else {
-            i++;
+        if (++i < integers.size()) {
             Recursion();
         }
     }
