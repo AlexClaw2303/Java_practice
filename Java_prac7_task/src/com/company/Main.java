@@ -1,14 +1,17 @@
 package com.company;
 import java.util.ArrayList;
-
+import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int[] a1 = {1, 3, 5, 7, 9};
-        int[] a2 = {2, 4, 6, 8, 0};
+        Scanner sc = new Scanner(System.in);
+        int[] a1 = new int[5];
+        int[] a2 = new int[5];
         ArrayList<Integer> arr1 = new ArrayList<>();
         ArrayList<Integer> arr2 = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
+            a1[i] = sc.nextInt();
+            a2[i] = sc.nextInt();
             arr1.add(a1[i]);
             arr2.add(a2[i]);
         }
